@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE89A96919E682FE00423396 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE89A96819E682FE00423396 /* Foundation.framework */; };
+		EE89A96B19E682FE00423396 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE89A96A19E682FE00423396 /* CoreGraphics.framework */; };
+		EE89A96D19E682FE00423396 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE89A96C19E682FE00423396 /* UIKit.framework */; };
+		EE89A97319E682FE00423396 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE89A97119E682FE00423396 /* InfoPlist.strings */; };
+		EE89A97519E682FE00423396 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE89A97419E682FE00423396 /* main.m */; };
+		EE89A97919E682FE00423396 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE89A97819E682FE00423396 /* AppDelegate.m */; };
+		EE89A97F19E682FE00423396 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE89A97E19E682FE00423396 /* ViewController.m */; };
+		EE89A98119E682FE00423396 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE89A98019E682FE00423396 /* Images.xcassets */; };
+		EE89A98819E682FE00423396 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE89A98719E682FE00423396 /* XCTest.framework */; };
+		EE89A98919E682FE00423396 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE89A96819E682FE00423396 /* Foundation.framework */; };
+		EE89A98A19E682FE00423396 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE89A96C19E682FE00423396 /* UIKit.framework */; };
+		EE89A99219E682FE00423396 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE89A99019E682FE00423396 /* InfoPlist.strings */; };
+		EE89A99419E682FE00423396 /* watteNNTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE89A99319E682FE00423396 /* watteNNTests.m */; };
+		EE89A9A119E6936A00423396 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE89A9A019E6936A00423396 /* DetailViewController.m */; };
+		EE89A9A519E69FD900423396 /* navigationBar_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = EE89A9A319E69FD900423396 /* navigationBar_bg.png */; };
+		EE89A9A619E69FD900423396 /* navigationBar_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EE89A9A419E69FD900423396 /* navigationBar_bg@2x.png */; };
+		EEBEE8C819ECBDF7009A0875 /* WahahaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBEE8C719ECBDF7009A0875 /* WahahaViewController.m */; };
+		EEC7F03019ECD2A800C0535F /* myNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC7F02F19ECD2A800C0535F /* myNavViewController.m */; };
+		EEC7F03919ED219700C0535F /* ccViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC7F03819ED219700C0535F /* ccViewController.m */; };
+		EEE74E8719EBC55400B6D7A4 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE74E8619EBC55400B6D7A4 /* TestViewController.m */; };
+		EEE74E8A19EBC82300B6D7A4 /* AbcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE74E8919EBC82300B6D7A4 /* AbcViewController.m */; };
+		EEE74E8D19EBC8A500B6D7A4 /* myTarBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE74E8C19EBC8A500B6D7A4 /* myTarBarViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE89A98B19E682FE00423396 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE89A95D19E682FD00423396 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE89A96419E682FD00423396;
+			remoteInfo = watteNN;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EE89A96519E682FD00423396 /* watteNN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watteNN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE89A96819E682FE00423396 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EE89A96A19E682FE00423396 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EE89A96C19E682FE00423396 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EE89A97019E682FE00423396 /* watteNN-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "watteNN-Info.plist"; sourceTree = "<group>"; };
+		EE89A97219E682FE00423396 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EE89A97419E682FE00423396 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EE89A97619E682FE00423396 /* watteNN-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "watteNN-Prefix.pch"; sourceTree = "<group>"; };
+		EE89A97719E682FE00423396 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EE89A97819E682FE00423396 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EE89A97D19E682FE00423396 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EE89A97E19E682FE00423396 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EE89A98019E682FE00423396 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EE89A98619E682FE00423396 /* watteNNTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = watteNNTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE89A98719E682FE00423396 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EE89A98F19E682FE00423396 /* watteNNTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "watteNNTests-Info.plist"; sourceTree = "<group>"; };
+		EE89A99119E682FE00423396 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EE89A99319E682FE00423396 /* watteNNTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = watteNNTests.m; sourceTree = "<group>"; };
+		EE89A99F19E6936A00423396 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		EE89A9A019E6936A00423396 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		EE89A9A319E69FD900423396 /* navigationBar_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationBar_bg.png; sourceTree = "<group>"; };
+		EE89A9A419E69FD900423396 /* navigationBar_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationBar_bg@2x.png"; sourceTree = "<group>"; };
+		EEBEE8C619ECBDF7009A0875 /* WahahaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WahahaViewController.h; sourceTree = "<group>"; };
+		EEBEE8C719ECBDF7009A0875 /* WahahaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WahahaViewController.m; sourceTree = "<group>"; };
+		EEC7F02E19ECD2A800C0535F /* myNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myNavViewController.h; sourceTree = "<group>"; };
+		EEC7F02F19ECD2A800C0535F /* myNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myNavViewController.m; sourceTree = "<group>"; };
+		EEC7F03719ED219700C0535F /* ccViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccViewController.h; sourceTree = "<group>"; };
+		EEC7F03819ED219700C0535F /* ccViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ccViewController.m; sourceTree = "<group>"; };
+		EEE74E8519EBC55400B6D7A4 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		EEE74E8619EBC55400B6D7A4 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		EEE74E8819EBC82300B6D7A4 /* AbcViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbcViewController.h; sourceTree = "<group>"; };
+		EEE74E8919EBC82300B6D7A4 /* AbcViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbcViewController.m; sourceTree = "<group>"; };
+		EEE74E8B19EBC8A500B6D7A4 /* myTarBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myTarBarViewController.h; sourceTree = "<group>"; };
+		EEE74E8C19EBC8A500B6D7A4 /* myTarBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myTarBarViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE89A96219E682FD00423396 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE89A96B19E682FE00423396 /* CoreGraphics.framework in Frameworks */,
+				EE89A96D19E682FE00423396 /* UIKit.framework in Frameworks */,
+				EE89A96919E682FE00423396 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE89A98319E682FE00423396 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE89A98819E682FE00423396 /* XCTest.framework in Frameworks */,
+				EE89A98A19E682FE00423396 /* UIKit.framework in Frameworks */,
+				EE89A98919E682FE00423396 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE89A95C19E682FD00423396 = {
+			isa = PBXGroup;
+			children = (
+				EE89A96E19E682FE00423396 /* watteNN */,
+				EE89A98D19E682FE00423396 /* watteNNTests */,
+				EE89A96719E682FD00423396 /* Frameworks */,
+				EE89A96619E682FD00423396 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE89A96619E682FD00423396 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE89A96519E682FD00423396 /* watteNN.app */,
+				EE89A98619E682FE00423396 /* watteNNTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE89A96719E682FD00423396 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE89A96819E682FE00423396 /* Foundation.framework */,
+				EE89A96A19E682FE00423396 /* CoreGraphics.framework */,
+				EE89A96C19E682FE00423396 /* UIKit.framework */,
+				EE89A98719E682FE00423396 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE89A96E19E682FE00423396 /* watteNN */ = {
+			isa = PBXGroup;
+			children = (
+				EE89A9A219E69FD900423396 /* img */,
+				EE89A97719E682FE00423396 /* AppDelegate.h */,
+				EE89A97819E682FE00423396 /* AppDelegate.m */,
+				EE89A97D19E682FE00423396 /* ViewController.h */,
+				EE89A97E19E682FE00423396 /* ViewController.m */,
+				EE89A98019E682FE00423396 /* Images.xcassets */,
+				EE89A96F19E682FE00423396 /* Supporting Files */,
+				EE89A99F19E6936A00423396 /* DetailViewController.h */,
+				EE89A9A019E6936A00423396 /* DetailViewController.m */,
+				EEE74E8519EBC55400B6D7A4 /* TestViewController.h */,
+				EEE74E8619EBC55400B6D7A4 /* TestViewController.m */,
+				EEE74E8819EBC82300B6D7A4 /* AbcViewController.h */,
+				EEE74E8919EBC82300B6D7A4 /* AbcViewController.m */,
+				EEE74E8B19EBC8A500B6D7A4 /* myTarBarViewController.h */,
+				EEE74E8C19EBC8A500B6D7A4 /* myTarBarViewController.m */,
+				EEBEE8C619ECBDF7009A0875 /* WahahaViewController.h */,
+				EEBEE8C719ECBDF7009A0875 /* WahahaViewController.m */,
+				EEC7F02E19ECD2A800C0535F /* myNavViewController.h */,
+				EEC7F02F19ECD2A800C0535F /* myNavViewController.m */,
+				EEC7F03719ED219700C0535F /* ccViewController.h */,
+				EEC7F03819ED219700C0535F /* ccViewController.m */,
+			);
+			path = watteNN;
+			sourceTree = "<group>";
+		};
+		EE89A96F19E682FE00423396 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE89A97019E682FE00423396 /* watteNN-Info.plist */,
+				EE89A97119E682FE00423396 /* InfoPlist.strings */,
+				EE89A97419E682FE00423396 /* main.m */,
+				EE89A97619E682FE00423396 /* watteNN-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE89A98D19E682FE00423396 /* watteNNTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE89A99319E682FE00423396 /* watteNNTests.m */,
+				EE89A98E19E682FE00423396 /* Supporting Files */,
+			);
+			path = watteNNTests;
+			sourceTree = "<group>";
+		};
+		EE89A98E19E682FE00423396 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE89A98F19E682FE00423396 /* watteNNTests-Info.plist */,
+				EE89A99019E682FE00423396 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE89A9A219E69FD900423396 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				EE89A9A319E69FD900423396 /* navigationBar_bg.png */,
+				EE89A9A419E69FD900423396 /* navigationBar_bg@2x.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE89A96419E682FD00423396 /* watteNN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE89A99719E682FE00423396 /* Build configuration list for PBXNativeTarget "watteNN" */;
+			buildPhases = (
+				EE89A96119E682FD00423396 /* Sources */,
+				EE89A96219E682FD00423396 /* Frameworks */,
+				EE89A96319E682FD00423396 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = watteNN;
+			productName = watteNN;
+			productReference = EE89A96519E682FD00423396 /* watteNN.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE89A98519E682FE00423396 /* watteNNTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE89A99A19E682FE00423396 /* Build configuration list for PBXNativeTarget "watteNNTests" */;
+			buildPhases = (
+				EE89A98219E682FE00423396 /* Sources */,
+				EE89A98319E682FE00423396 /* Frameworks */,
+				EE89A98419E682FE00423396 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE89A98C19E682FE00423396 /* PBXTargetDependency */,
+			);
+			name = watteNNTests;
+			productName = watteNNTests;
+			productReference = EE89A98619E682FE00423396 /* watteNNTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE89A95D19E682FD00423396 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = gaoyong;
+				TargetAttributes = {
+					EE89A98519E682FE00423396 = {
+						TestTargetID = EE89A96419E682FD00423396;
+					};
+				};
+			};
+			buildConfigurationList = EE89A96019E682FD00423396 /* Build configuration list for PBXProject "watteNN" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE89A95C19E682FD00423396;
+			productRefGroup = EE89A96619E682FD00423396 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE89A96419E682FD00423396 /* watteNN */,
+				EE89A98519E682FE00423396 /* watteNNTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE89A96319E682FD00423396 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE89A98119E682FE00423396 /* Images.xcassets in Resources */,
+				EE89A9A619E69FD900423396 /* navigationBar_bg@2x.png in Resources */,
+				EE89A9A519E69FD900423396 /* navigationBar_bg.png in Resources */,
+				EE89A97319E682FE00423396 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE89A98419E682FE00423396 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE89A99219E682FE00423396 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE89A96119E682FD00423396 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEC7F03919ED219700C0535F /* ccViewController.m in Sources */,
+				EEE74E8D19EBC8A500B6D7A4 /* myTarBarViewController.m in Sources */,
+				EE89A97F19E682FE00423396 /* ViewController.m in Sources */,
+				EEBEE8C819ECBDF7009A0875 /* WahahaViewController.m in Sources */,
+				EE89A97919E682FE00423396 /* AppDelegate.m in Sources */,
+				EE89A97519E682FE00423396 /* main.m in Sources */,
+				EEE74E8A19EBC82300B6D7A4 /* AbcViewController.m in Sources */,
+				EEC7F03019ECD2A800C0535F /* myNavViewController.m in Sources */,
+				EE89A9A119E6936A00423396 /* DetailViewController.m in Sources */,
+				EEE74E8719EBC55400B6D7A4 /* TestViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE89A98219E682FE00423396 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE89A99419E682FE00423396 /* watteNNTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE89A98C19E682FE00423396 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE89A96419E682FD00423396 /* watteNN */;
+			targetProxy = EE89A98B19E682FE00423396 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE89A97119E682FE00423396 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE89A97219E682FE00423396 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EE89A99019E682FE00423396 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE89A99119E682FE00423396 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE89A99519E682FE00423396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EE89A99619E682FE00423396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE89A99819E682FE00423396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "watteNN/watteNN-Prefix.pch";
+				INFOPLIST_FILE = "watteNN/watteNN-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EE89A99919E682FE00423396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "watteNN/watteNN-Prefix.pch";
+				INFOPLIST_FILE = "watteNN/watteNN-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EE89A99B19E682FE00423396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/watteNN.app/watteNN";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "watteNN/watteNN-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "watteNNTests/watteNNTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EE89A99C19E682FE00423396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/watteNN.app/watteNN";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "watteNN/watteNN-Prefix.pch";
+				INFOPLIST_FILE = "watteNNTests/watteNNTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE89A96019E682FD00423396 /* Build configuration list for PBXProject "watteNN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE89A99519E682FE00423396 /* Debug */,
+				EE89A99619E682FE00423396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE89A99719E682FE00423396 /* Build configuration list for PBXNativeTarget "watteNN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE89A99819E682FE00423396 /* Debug */,
+				EE89A99919E682FE00423396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE89A99A19E682FE00423396 /* Build configuration list for PBXNativeTarget "watteNNTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE89A99B19E682FE00423396 /* Debug */,
+				EE89A99C19E682FE00423396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE89A95D19E682FD00423396 /* Project object */;
+}
