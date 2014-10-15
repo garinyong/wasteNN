@@ -68,7 +68,7 @@
     return poppedViewController;
 }
 
-- (NSArray *)popToViewController:(UIViewController *)viewController animated:(BOOL)animated
+- (NSArray *) popToViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
     if([_viewControllersWithHiddenBottomBar containsObject:viewController])
     {
@@ -79,7 +79,7 @@
         [self rootViewController].hidesBottomBarWhenPushed = NO;
     }
     
-    for (long i = self.viewControllers.count - 1; i>0; i--)
+    for (long i = self.viewControllers.count - 1; i > 0; i--)
     {
         UIViewController *tem = [self.viewControllers objectAtIndex:i];
         
@@ -93,7 +93,8 @@
     
     return [super popToViewController:viewController animated:animated];
 }
-- (NSArray *)popToRootViewControllerAnimated:(BOOL)animated
+
+- (NSArray *) popToRootViewControllerAnimated:(BOOL)animated
 {
     if([_viewControllersWithHiddenBottomBar containsObject:[self rootViewController]])
     {
@@ -104,7 +105,7 @@
         [self rootViewController].hidesBottomBarWhenPushed = NO;
     }
     
-    for (long i = self.viewControllers.count-1; i>0; i--)
+    for (long i = self.viewControllers.count - 1; i > 0; i--)
     {
         UIViewController *tem = [self.viewControllers objectAtIndex:i];
         [_viewControllersWithHiddenBottomBar removeObject:tem];
@@ -115,7 +116,7 @@
 
 - (UIViewController *) rootViewController
 {
-    return ((UIViewController *)self.viewControllers.firstObject);
+    return (UIViewController *)self.viewControllers.firstObject;
 }
 
 

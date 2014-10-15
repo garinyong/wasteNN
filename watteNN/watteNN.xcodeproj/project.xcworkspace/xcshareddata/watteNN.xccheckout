@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>12C7DD79-8AAA-43DD-A09B-F2518E3C9DFF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>watteNN</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>441896804BB13ABD9D99334431DD15AE09471FF4</key>
+		<string>https://github.com/garinyong/wasteNN.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>watteNN/watteNN.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>441896804BB13ABD9D99334431DD15AE09471FF4</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/garinyong/wasteNN.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>441896804BB13ABD9D99334431DD15AE09471FF4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>441896804BB13ABD9D99334431DD15AE09471FF4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>wasteNN</string>
+		</dict>
+	</array>
+</dict>
+</plist>

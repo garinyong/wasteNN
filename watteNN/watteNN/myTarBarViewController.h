@@ -13,12 +13,8 @@
 
 }
 
-- (void)showTabBar:(BOOL)animated;
-- (void)hideTabBar:(BOOL)animated;
+-(void) setTabBarHidden:(BOOL) hide;
 
-
-//- (void)hideTabBarN:(UITabBarController *) tabbarcontroller;
-//- (void)showTabBarN:(UITabBarController *) tabbarcontroller;
-
--(void) hidTabBarBBB:(BOOL) hide;
+- (void) showTabBar;
+- (void) hideTabBar;
 @end

@@ -23,8 +23,7 @@
 -(id) init
 {
     if (self=[super init]) {
-//        [[AppDelegate getTarBarViewController] hidTabBarBBB:YES];
-//        self.hidesBottomBarWhenPushed = YES;
+        self.hidesBottomBarWhenPushed = NO;
     }
     
     return self;
@@ -90,12 +89,12 @@
 
 -(void) getClick2
 {
-    [[AppDelegate getTarBarViewController] hidTabBarBBB:YES];
+    [[AppDelegate getTarBarViewController] setTabBarHidden:YES];
 }
 
 -(void) getClick3
 {
-    [[AppDelegate getTarBarViewController] hidTabBarBBB:NO];
+    [[AppDelegate getTarBarViewController] setTabBarHidden:NO];
 }
 
 - (void)didReceiveMemoryWarning {
