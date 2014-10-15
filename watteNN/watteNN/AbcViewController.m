@@ -74,14 +74,6 @@
 
 -(void) getClick1
 {
-//    [[AppDelegate getTarBarViewController] hideTabBar:YES];
-//    self.tabBarController.tabBar.hidden = YES;
-    
-//    [[AppDelegate getTarBarViewController] hideTabBarN:[AppDelegate getTarBarViewController]];
-    
-//    [[AppDelegate getTarBarViewController] hidTabBarBBB:YES];
-    
-    
     WahahaViewController *vc = [WahahaViewController new];
     [self.navigationController pushViewController:vc animated:YES];
     

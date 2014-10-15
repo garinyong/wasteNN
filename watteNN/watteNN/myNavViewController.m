@@ -7,6 +7,10 @@
 //
 
 #import "myNavViewController.h"
+#import <objc/runtime.h>
+#import "UIViewController+ext.h"
+#import "myTarBarViewController.h"
+
 
 @interface myNavViewController ()
 
@@ -18,10 +22,6 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
-//        self.delegate = self;
-        
-        _viewControllersWithHiddenBottomBar = [[NSMutableSet alloc] init];
     }
     return self;
 }
@@ -38,24 +38,34 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark -- 重写方法
+
 - (void) pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
+//    [((myTarBarViewController *)self.tabBarController) setTabBarHidden:NO];
+    //when viewController disappear invoke
+    
     if(viewController.hidesBottomBarWhenPushed)
     {
         viewController.hidesBottomBarWhenPushed = NO;
-        [_viewControllersWithHiddenBottomBar addObject:viewController];
+        [viewController setTabBarHiddenValueIniting_Associate:YES];
         [self rootViewController].hidesBottomBarWhenPushed = YES;
     }
     else
     {
         [self rootViewController].hidesBottomBarWhenPushed = NO;
     }
+    
     [super pushViewController:viewController animated:animated];
 }
 
 - (UIViewController *) popViewControllerAnimated:(BOOL)animated
 {
-    if([_viewControllersWithHiddenBottomBar containsObject:self.viewControllers[self.viewControllers.count - 2]])
+//    [((myTarBarViewController *)self.tabBarController) setTabBarHidden:NO];
+    
+    UIViewController *vc = self.viewControllers[self.viewControllers.count - 2];
+    
+    if ([vc isHideTabBarIniting_Associate])
     {
         [self rootViewController].hidesBottomBarWhenPushed = YES;
     }
@@ -63,14 +73,17 @@
     {
         [self rootViewController].hidesBottomBarWhenPushed = NO;
     }
-    UIViewController *poppedViewController = [super popViewControllerAnimated:animated];
-    [_viewControllersWithHiddenBottomBar removeObject:poppedViewController];
-    return poppedViewController;
+    
+    [self.topViewController setTabBarHiddenValueIniting_Associate:NO];
+    
+    return [super popViewControllerAnimated:animated];
 }
 
 - (NSArray *) popToViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-    if([_viewControllersWithHiddenBottomBar containsObject:viewController])
+//    [((myTarBarViewController *)self.tabBarController) setTabBarHidden:NO];
+    
+    if([viewController isHideTabBarIniting_Associate])
     {
         [self rootViewController].hidesBottomBarWhenPushed = YES;
     }
@@ -88,7 +101,7 @@
             break;
         }
         
-        [_viewControllersWithHiddenBottomBar removeObject:tem];
+        [tem setTabBarHiddenValueIniting_Associate:NO];
     }
     
     return [super popToViewController:viewController animated:animated];
@@ -96,7 +109,9 @@
 
 - (NSArray *) popToRootViewControllerAnimated:(BOOL)animated
 {
-    if([_viewControllersWithHiddenBottomBar containsObject:[self rootViewController]])
+//    [((myTarBarViewController *)self.tabBarController) setTabBarHidden:NO];
+    
+    if ([[self rootViewController] isHideTabBarIniting_Associate])
     {
         [self rootViewController].hidesBottomBarWhenPushed = YES;
     }
@@ -108,7 +123,7 @@
     for (long i = self.viewControllers.count - 1; i > 0; i--)
     {
         UIViewController *tem = [self.viewControllers objectAtIndex:i];
-        [_viewControllersWithHiddenBottomBar removeObject:tem];
+        [tem setTabBarHiddenValueIniting_Associate:NO];
     }
     
     return [super popToRootViewControllerAnimated:animated];

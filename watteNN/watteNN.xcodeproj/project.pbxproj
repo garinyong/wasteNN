@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE58B88419EE280D00FD9461 /* UIViewController+ext.m in Sources */ = {isa = PBXBuildFile; fileRef = EE58B88319EE280D00FD9461 /* UIViewController+ext.m */; };
 		EE89A96919E682FE00423396 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE89A96819E682FE00423396 /* Foundation.framework */; };
 		EE89A96B19E682FE00423396 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE89A96A19E682FE00423396 /* CoreGraphics.framework */; };
 		EE89A96D19E682FE00423396 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE89A96C19E682FE00423396 /* UIKit.framework */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE58B88219EE280D00FD9461 /* UIViewController+ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ext.h"; sourceTree = "<group>"; };
+		EE58B88319EE280D00FD9461 /* UIViewController+ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ext.m"; sourceTree = "<group>"; };
 		EE89A96519E682FD00423396 /* watteNN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watteNN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE89A96819E682FE00423396 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EE89A96A19E682FE00423396 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -156,6 +159,8 @@
 				EEC7F02F19ECD2A800C0535F /* myNavViewController.m */,
 				EEC7F03719ED219700C0535F /* ccViewController.h */,
 				EEC7F03819ED219700C0535F /* ccViewController.m */,
+				EE58B88219EE280D00FD9461 /* UIViewController+ext.h */,
+				EE58B88319EE280D00FD9461 /* UIViewController+ext.m */,
 			);
 			path = watteNN;
 			sourceTree = "<group>";
@@ -306,6 +311,7 @@
 				EEC7F03019ECD2A800C0535F /* myNavViewController.m in Sources */,
 				EE89A9A119E6936A00423396 /* DetailViewController.m in Sources */,
 				EEE74E8719EBC55400B6D7A4 /* TestViewController.m in Sources */,
+				EE58B88419EE280D00FD9461 /* UIViewController+ext.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

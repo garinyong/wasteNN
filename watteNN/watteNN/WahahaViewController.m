@@ -18,9 +18,8 @@
 -(id) init
 {
     if (self = [super init]) {
-        
-//        [[AppDelegate getTarBarViewController] hidTabBarBBB:NO];
-//        self.hidesBottomBarWhenPushed = NO;
+    
+        self.hidesBottomBarWhenPushed = YES;
     }
     
     return self;

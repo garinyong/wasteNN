@@ -7,6 +7,7 @@
 //
 
 #import "myTarBarViewController.h"
+#import "UIViewController+ext.h"
 
 @interface myTarBarViewController ()
 
@@ -26,6 +27,10 @@
 
 -(void) setTabBarHidden:(BOOL) hide
 {
+    if (hide==self.tabBar.hidden) {
+        return;
+    }
+    
 	if (self.view.subviews.count < 2)
     {
 		return;
@@ -55,26 +60,6 @@
 	}
 	
 	self.tabBar.hidden = hide;
-}
-
-- (void)showTabBar
-{
-    if (self.view.bounds.size.height <= self.tabBar.frame.origin.y)
-    {
-        CGRect tabFrame = self.tabBar.frame;
-        tabFrame.origin.y = tabFrame.origin.y - tabFrame.size.height;
-        self.tabBar.frame = tabFrame;
-    }
-}
-
-- (void) hideTabBar
-{
-    if (self.view.bounds.size.height > self.tabBar.frame.origin.y)
-    {
-        CGRect tabFrame = self.tabBar.frame;
-        tabFrame.origin.y = tabFrame.origin.y + tabFrame.size.height;
-        self.tabBar.frame = tabFrame;
-    }
 }
 
 @end

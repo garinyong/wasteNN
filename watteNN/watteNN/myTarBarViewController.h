@@ -15,6 +15,4 @@
 
 -(void) setTabBarHidden:(BOOL) hide;
 
-- (void) showTabBar;
-- (void) hideTabBar;
 @end

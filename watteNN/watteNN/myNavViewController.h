@@ -10,6 +10,6 @@
 
 @interface myNavViewController : UINavigationController<UINavigationControllerDelegate>
 {
-    NSMutableSet *_viewControllersWithHiddenBottomBar;
+
 }
 @end
