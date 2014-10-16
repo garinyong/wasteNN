@@ -18,8 +18,7 @@
 -(id) init
 {
     if (self = [super init]) {
-    
-        self.hidesBottomBarWhenPushed = YES;
+        self.tabBarHidden_associated = NO;
     }
     
     return self;
@@ -52,6 +51,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void) viewWillAppear:(BOOL)animated
+{
+//    [((myTarBarViewController *)self.tabBarController) setTabBarHidden:NO];
 }
 
 /*

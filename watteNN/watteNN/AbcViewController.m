@@ -23,7 +23,7 @@
 -(id) init
 {
     if (self=[super init]) {
-        self.hidesBottomBarWhenPushed = NO;
+        self.tabBarHidden_associated = NO;
     }
     
     return self;

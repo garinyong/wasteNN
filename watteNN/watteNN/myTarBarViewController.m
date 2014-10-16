@@ -31,7 +31,7 @@
         return;
     }
     
-	if (self.view.subviews.count < 2)
+    if (self.view.subviews.count < 1)
     {
 		return;
 	}
@@ -40,6 +40,11 @@
 	
 	if ( [[self.view.subviews objectAtIndex:0] isKindOfClass:[UITabBar class]] )
     {
+        if (self.view.subviews.count < 2)
+        {
+            return;
+        }
+        
 		contentView = [self.view.subviews objectAtIndex:1];
 	}
     else
@@ -58,8 +63,8 @@
 									   self.view.bounds.size.width,
                                        self.view.bounds.size.height - self.tabBar.frame.size.height);
 	}
-	
-	self.tabBar.hidden = hide;
+    
+    self.tabBar.hidden = hide;
 }
 
 @end

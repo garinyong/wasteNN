@@ -12,12 +12,11 @@
 
 @implementation UIViewController (ext)
 
-static char kHideTabBarInitingAssociatedKey;  //初始化时隐藏
-static char kHideTabBarInitedAssociatedKey;   //已经初始化后隐藏
+static char kHideTabBarAssociatedKey;  //初始化时隐藏
 
 +(void) load
 {
-    [swizzMethod swizz_exchangeInstanceMethod:[self class] originalSelector:@selector(viewWillDisappear:) newSEL:@selector(viewWillDisappearExt:)];
+//    [swizzMethod swizz_exchangeInstanceMethod:[self class] originalSelector:@selector(viewWillDisappear:) newSEL:@selector(viewWillDisappearExt:)];
 }
 
 +(void) initialize
@@ -25,9 +24,9 @@ static char kHideTabBarInitedAssociatedKey;   //已经初始化后隐藏
     NSLog(@"%@ initialize",[[self class] description]);
 }
 
--(BOOL) isHideTabBarIniting_Associate
+-(BOOL) tabBarHidden_associated
 {
-    id hiddenValue = objc_getAssociatedObject(self, &kHideTabBarInitingAssociatedKey);
+    id hiddenValue = objc_getAssociatedObject(self, &kHideTabBarAssociatedKey);
     
     if (!hiddenValue) {
         return NO;
@@ -36,33 +35,16 @@ static char kHideTabBarInitedAssociatedKey;   //已经初始化后隐藏
     return [hiddenValue boolValue];
 }
 
--(void) setTabBarHiddenValueIniting_Associate:(BOOL) hiddenValue
+-(void) setTabBarHidden_associated:(BOOL) hiddenValue
 {
-    objc_setAssociatedObject(self, &kHideTabBarInitingAssociatedKey, [NSNumber numberWithBool:hiddenValue], OBJC_ASSOCIATION_COPY_NONATOMIC);
-}
-
-
--(BOOL) isHideTabBarInited_Associate
-{
-    id hiddenValue = objc_getAssociatedObject(self, &kHideTabBarInitedAssociatedKey);
-    
-    if (!hiddenValue) {
-        return NO;
-    }
-    
-    return [hiddenValue boolValue];
-}
-
--(void) setTabBarHiddenValueInited_Associate:(BOOL) hiddenValue
-{
-    objc_setAssociatedObject(self, &kHideTabBarInitedAssociatedKey, [NSNumber numberWithBool:hiddenValue], OBJC_ASSOCIATION_COPY_NONATOMIC);
+    objc_setAssociatedObject(self, &kHideTabBarAssociatedKey, [NSNumber numberWithBool:hiddenValue], OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
 -(void) viewWillDisappearExt:(BOOL)animated
 {
     NSLog(@"呵呵呵%@",[[self class] description]);
     
-    [((myTarBarViewController *)self.tabBarController) setTabBarHidden:NO];
+//    [((myTarBarViewController *)self.tabBarController) fixTabBarFrame];
     
     [self viewWillDisappearExt:animated];
 }

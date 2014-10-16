@@ -42,18 +42,13 @@
 
 - (void) pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-//    [((myTarBarViewController *)self.tabBarController) setTabBarHidden:NO];
-    //when viewController disappear invoke
-    
-    if(viewController.hidesBottomBarWhenPushed)
+    if (viewController.tabBarHidden_associated)
     {
-        viewController.hidesBottomBarWhenPushed = NO;
-        [viewController setTabBarHiddenValueIniting_Associate:YES];
-        [self rootViewController].hidesBottomBarWhenPushed = YES;
+        [((myTarBarViewController *)self.tabBarController) setTabBarHidden:YES];
     }
     else
     {
-        [self rootViewController].hidesBottomBarWhenPushed = NO;
+        [((myTarBarViewController *)self.tabBarController) setTabBarHidden:NO];
     }
     
     [super pushViewController:viewController animated:animated];
@@ -61,47 +56,29 @@
 
 - (UIViewController *) popViewControllerAnimated:(BOOL)animated
 {
-//    [((myTarBarViewController *)self.tabBarController) setTabBarHidden:NO];
-    
     UIViewController *vc = self.viewControllers[self.viewControllers.count - 2];
     
-    if ([vc isHideTabBarIniting_Associate])
+    if (vc.tabBarHidden_associated)
     {
-        [self rootViewController].hidesBottomBarWhenPushed = YES;
+        [((myTarBarViewController *)self.tabBarController) setTabBarHidden:YES];
     }
     else
     {
-        [self rootViewController].hidesBottomBarWhenPushed = NO;
+        [((myTarBarViewController *)self.tabBarController) setTabBarHidden:NO];
     }
-    
-    [self.topViewController setTabBarHiddenValueIniting_Associate:NO];
     
     return [super popViewControllerAnimated:animated];
 }
 
 - (NSArray *) popToViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-//    [((myTarBarViewController *)self.tabBarController) setTabBarHidden:NO];
-    
-    if([viewController isHideTabBarIniting_Associate])
+    if(viewController.tabBarHidden_associated)
     {
-        [self rootViewController].hidesBottomBarWhenPushed = YES;
+        [((myTarBarViewController *)self.tabBarController) setTabBarHidden:YES];
     }
     else
     {
-        [self rootViewController].hidesBottomBarWhenPushed = NO;
-    }
-    
-    for (long i = self.viewControllers.count - 1; i > 0; i--)
-    {
-        UIViewController *tem = [self.viewControllers objectAtIndex:i];
-        
-        if(tem == viewController)
-        {
-            break;
-        }
-        
-        [tem setTabBarHiddenValueIniting_Associate:NO];
+        [((myTarBarViewController *)self.tabBarController) setTabBarHidden:NO];
     }
     
     return [super popToViewController:viewController animated:animated];
@@ -109,21 +86,13 @@
 
 - (NSArray *) popToRootViewControllerAnimated:(BOOL)animated
 {
-//    [((myTarBarViewController *)self.tabBarController) setTabBarHidden:NO];
-    
-    if ([[self rootViewController] isHideTabBarIniting_Associate])
+    if ([self rootViewController].tabBarHidden_associated)
     {
-        [self rootViewController].hidesBottomBarWhenPushed = YES;
+        [((myTarBarViewController *)self.tabBarController) setTabBarHidden:YES];
     }
     else
     {
-        [self rootViewController].hidesBottomBarWhenPushed = NO;
-    }
-    
-    for (long i = self.viewControllers.count - 1; i > 0; i--)
-    {
-        UIViewController *tem = [self.viewControllers objectAtIndex:i];
-        [tem setTabBarHiddenValueIniting_Associate:NO];
+        [((myTarBarViewController *)self.tabBarController) setTabBarHidden:NO];
     }
     
     return [super popToRootViewControllerAnimated:animated];

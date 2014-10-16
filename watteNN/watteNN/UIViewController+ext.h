@@ -10,13 +10,7 @@
 
 @interface UIViewController (ext)
 
--(BOOL) isHideTabBarIniting_Associate;
-
--(void) setTabBarHiddenValueIniting_Associate:(BOOL) hiddenValue;
-
--(BOOL) isHideTabBarInited_Associate;
-
--(void) setTabBarHiddenValueInited_Associate:(BOOL) hiddenValue;
+@property (nonatomic) BOOL tabBarHidden_associated;
 
 -(void) viewWillDisappearExt:(BOOL)animated;
 
