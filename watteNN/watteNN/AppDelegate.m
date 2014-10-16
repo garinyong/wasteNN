@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "NSObject+swizz.h"
 
 static myTarBarViewController *curTarBarViewController;
 
@@ -14,6 +15,21 @@ static myTarBarViewController *curTarBarViewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+//    Method ori_Method =  class_getInstanceMethod([UIViewController class], @selector(viewWillAppear:));
+//    Method my_Method = class_getInstanceMethod([UIViewController class], @selector(viewWillAppearExt:));
+//    method_exchangeImplementations(ori_Method, my_Method);
+    
+//    [swizzMethod swizz_exchangeInstanceMethod:[UIViewController class] originSEL:@selector(viewWillDisappear:) newClass:[UIViewController class] newSEL:@selector(viewWillDisappearExt:)];
+    
+    [UIViewController swizz_exchangeInstanceMethod:@selector(viewWillDisappear:) newSEL:@selector(viewWillDisappearExt:)];
+    
+//    [swizzMethod swizz_exchangeInstanceMethod:[NSArray class] originSEL:@selector(lastObject) newClass:[NSArray class] newSEL:@selector(myLastObject)];
+    
+    NSArray *array = @[@"0",@"1",@"2",@"3"];
+    NSString *string = [array lastObject];
+    NSLog(@"TEST RESULT : %@",string);
+    
+    
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

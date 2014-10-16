@@ -67,7 +67,7 @@
 
 -(void) getClick2
 {
-    [self.navigationController popToViewController:self.navigationController.viewControllers[self.navigationController.viewControllers.count-3] animated:YES];
+    [self.navigationController popToViewController:self.navigationController.viewControllers[0] animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

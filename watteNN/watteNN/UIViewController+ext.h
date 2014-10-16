@@ -18,4 +18,6 @@
 
 -(void) setTabBarHiddenValueInited_Associate:(BOOL) hiddenValue;
 
+-(void) viewWillDisappearExt:(BOOL)animated;
+
 @end

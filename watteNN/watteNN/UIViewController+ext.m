@@ -47,4 +47,13 @@ static char kHideTabBarInitedAssociatedKey;   //已经初始化后隐藏
     objc_setAssociatedObject(self, &kHideTabBarInitedAssociatedKey, [NSNumber numberWithBool:hiddenValue], OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
+-(void) viewWillDisappearExt:(BOOL)animated
+{
+    NSLog(@"呵呵呵%@",[[self class] description]);
+    
+    [((myTarBarViewController *)self.tabBarController) setTabBarHidden:NO];
+    
+    [self viewWillDisappearExt:animated];
+}
+
 @end
