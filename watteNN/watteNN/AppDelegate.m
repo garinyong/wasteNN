@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "NSObject+swizz.h"
+#import "swizzMethod.h"
 
 static myTarBarViewController *curTarBarViewController;
 
@@ -19,9 +19,7 @@ static myTarBarViewController *curTarBarViewController;
 //    Method my_Method = class_getInstanceMethod([UIViewController class], @selector(viewWillAppearExt:));
 //    method_exchangeImplementations(ori_Method, my_Method);
     
-//    [swizzMethod swizz_exchangeInstanceMethod:[UIViewController class] originSEL:@selector(viewWillDisappear:) newClass:[UIViewController class] newSEL:@selector(viewWillDisappearExt:)];
-    
-    [UIViewController swizz_exchangeInstanceMethod:@selector(viewWillDisappear:) newSEL:@selector(viewWillDisappearExt:)];
+//    [swizzMethod swizz_exchangeInstanceMethod:[UIViewController class] originSEL:@selector(viewWillDisappear:) newClass:[UIViewController class] newSEL:@selector(viewWillDisappearExt:)]
     
 //    [swizzMethod swizz_exchangeInstanceMethod:[NSArray class] originSEL:@selector(lastObject) newClass:[NSArray class] newSEL:@selector(myLastObject)];
     

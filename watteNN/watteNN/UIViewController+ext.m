@@ -8,11 +8,22 @@
 
 #import "UIViewController+ext.h"
 #import <objc/runtime.h>
+#import "swizzMethod.h"
 
 @implementation UIViewController (ext)
 
 static char kHideTabBarInitingAssociatedKey;  //初始化时隐藏
 static char kHideTabBarInitedAssociatedKey;   //已经初始化后隐藏
+
++(void) load
+{
+    [swizzMethod swizz_exchangeInstanceMethod:[self class] originalSelector:@selector(viewWillDisappear:) newSEL:@selector(viewWillDisappearExt:)];
+}
+
++(void) initialize
+{
+    NSLog(@"%@ initialize",[[self class] description]);
+}
 
 -(BOOL) isHideTabBarIniting_Associate
 {

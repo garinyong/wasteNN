@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EE58B88419EE280D00FD9461 /* UIViewController+ext.m in Sources */ = {isa = PBXBuildFile; fileRef = EE58B88319EE280D00FD9461 /* UIViewController+ext.m */; };
-		EE82F80519EFCC9300E8A5C2 /* NSObject+swizz.m in Sources */ = {isa = PBXBuildFile; fileRef = EE82F80419EFCC9300E8A5C2 /* NSObject+swizz.m */; };
+		EE82F80B19EFDD7A00E8A5C2 /* swizzMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = EE82F80A19EFDD7A00E8A5C2 /* swizzMethod.m */; };
 		EE89A96919E682FE00423396 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE89A96819E682FE00423396 /* Foundation.framework */; };
 		EE89A96B19E682FE00423396 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE89A96A19E682FE00423396 /* CoreGraphics.framework */; };
 		EE89A96D19E682FE00423396 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE89A96C19E682FE00423396 /* UIKit.framework */; };
@@ -46,8 +46,8 @@
 /* Begin PBXFileReference section */
 		EE58B88219EE280D00FD9461 /* UIViewController+ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ext.h"; sourceTree = "<group>"; };
 		EE58B88319EE280D00FD9461 /* UIViewController+ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ext.m"; sourceTree = "<group>"; };
-		EE82F80319EFCC9300E8A5C2 /* NSObject+swizz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+swizz.h"; sourceTree = "<group>"; };
-		EE82F80419EFCC9300E8A5C2 /* NSObject+swizz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+swizz.m"; sourceTree = "<group>"; };
+		EE82F80919EFDD7A00E8A5C2 /* swizzMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swizzMethod.h; sourceTree = "<group>"; };
+		EE82F80A19EFDD7A00E8A5C2 /* swizzMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = swizzMethod.m; sourceTree = "<group>"; };
 		EE89A96519E682FD00423396 /* watteNN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watteNN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE89A96819E682FE00423396 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EE89A96A19E682FE00423396 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -164,8 +164,8 @@
 				EEC7F03819ED219700C0535F /* ccViewController.m */,
 				EE58B88219EE280D00FD9461 /* UIViewController+ext.h */,
 				EE58B88319EE280D00FD9461 /* UIViewController+ext.m */,
-				EE82F80319EFCC9300E8A5C2 /* NSObject+swizz.h */,
-				EE82F80419EFCC9300E8A5C2 /* NSObject+swizz.m */,
+				EE82F80919EFDD7A00E8A5C2 /* swizzMethod.h */,
+				EE82F80A19EFDD7A00E8A5C2 /* swizzMethod.m */,
 			);
 			path = watteNN;
 			sourceTree = "<group>";
@@ -307,13 +307,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEC7F03919ED219700C0535F /* ccViewController.m in Sources */,
-				EE82F80519EFCC9300E8A5C2 /* NSObject+swizz.m in Sources */,
 				EEE74E8D19EBC8A500B6D7A4 /* myTarBarViewController.m in Sources */,
 				EE89A97F19E682FE00423396 /* ViewController.m in Sources */,
 				EEBEE8C819ECBDF7009A0875 /* WahahaViewController.m in Sources */,
 				EE89A97919E682FE00423396 /* AppDelegate.m in Sources */,
 				EE89A97519E682FE00423396 /* main.m in Sources */,
 				EEE74E8A19EBC82300B6D7A4 /* AbcViewController.m in Sources */,
+				EE82F80B19EFDD7A00E8A5C2 /* swizzMethod.m in Sources */,
 				EEC7F03019ECD2A800C0535F /* myNavViewController.m in Sources */,
 				EE89A9A119E6936A00423396 /* DetailViewController.m in Sources */,
 				EEE74E8719EBC55400B6D7A4 /* TestViewController.m in Sources */,
