@@ -10,8 +10,6 @@
 
 @interface UIViewController (ext)
 
-@property (nonatomic) BOOL tabBarHidden_associated;
-
--(void) viewWillDisappearExt:(BOOL)animated;
+@property (nonatomic) BOOL hidesBottomBarWhenPushed_DangDang;
 
 @end

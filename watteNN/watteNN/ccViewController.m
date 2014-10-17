@@ -24,7 +24,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self)
     {
-        self.tabBarHidden_associated = NO;
+        self.hidesBottomBarWhenPushed_DangDang = NO;
     }
     return self;
 }
@@ -67,7 +67,7 @@
 
 -(void) getClick2
 {
-    [self.navigationController popToViewController:self.navigationController.viewControllers[0] animated:YES];
+    [self.navigationController popToViewController:self.navigationController.viewControllers[1] animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

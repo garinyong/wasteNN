@@ -42,7 +42,7 @@
 
 - (void) pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-    [((myTarBarViewController *)self.tabBarController) setTabBarHiddenOnViewController:viewController.tabBarHidden_associated vc:viewController];
+    [((myTarBarViewController *)self.tabBarController) setTabBarHiddenOnViewController:viewController.hidesBottomBarWhenPushed_DangDang vc:viewController];
     
     [super pushViewController:viewController animated:animated];
 }
@@ -51,14 +51,14 @@
 {
     UIViewController *viewController = self.viewControllers[self.viewControllers.count - 2];
     
-    [((myTarBarViewController *)self.tabBarController) setTabBarHiddenOnViewController:viewController.tabBarHidden_associated vc:viewController];
+    [((myTarBarViewController *)self.tabBarController) setTabBarHiddenOnViewController:viewController.hidesBottomBarWhenPushed_DangDang vc:viewController];
     
     return [super popViewControllerAnimated:animated];
 }
 
 - (NSArray *) popToViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-    [((myTarBarViewController *)self.tabBarController) setTabBarHiddenOnViewController:viewController.tabBarHidden_associated vc:viewController];
+    [((myTarBarViewController *)self.tabBarController) setTabBarHiddenOnViewController:viewController.hidesBottomBarWhenPushed_DangDang vc:viewController];
     
     return [super popToViewController:viewController animated:animated];
 }
@@ -67,7 +67,7 @@
 {
     if ([self rootViewController])
     {
-        [((myTarBarViewController *)self.tabBarController) setTabBarHiddenOnViewController:[self rootViewController].tabBarHidden_associated vc:[self rootViewController]];
+        [((myTarBarViewController *)self.tabBarController) setTabBarHiddenOnViewController:[self rootViewController].hidesBottomBarWhenPushed_DangDang vc:[self rootViewController]];
     }
     
     return [super popToRootViewControllerAnimated:animated];

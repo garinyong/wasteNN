@@ -14,17 +14,7 @@
 
 static char kHideTabBarAssociatedKey;  //初始化时隐藏
 
-+(void) load
-{
-//    [swizzMethod swizz_exchangeInstanceMethod:[self class] originalSelector:@selector(viewWillDisappear:) newSEL:@selector(viewWillDisappearExt:)];
-}
-
-+(void) initialize
-{
-    NSLog(@"%@ initialize",[[self class] description]);
-}
-
--(BOOL) tabBarHidden_associated
+-(BOOL) hidesBottomBarWhenPushed_DangDang
 {
     id hiddenValue = objc_getAssociatedObject(self, &kHideTabBarAssociatedKey);
     
@@ -35,18 +25,9 @@ static char kHideTabBarAssociatedKey;  //初始化时隐藏
     return [hiddenValue boolValue];
 }
 
--(void) setTabBarHidden_associated:(BOOL) hiddenValue
+-(void) setHidesBottomBarWhenPushed_DangDang:(BOOL)hidesBottomBarWhenPushed_DangDang
 {
-    objc_setAssociatedObject(self, &kHideTabBarAssociatedKey, [NSNumber numberWithBool:hiddenValue], OBJC_ASSOCIATION_COPY_NONATOMIC);
-}
-
--(void) viewWillDisappearExt:(BOOL)animated
-{
-    NSLog(@"呵呵呵%@",[[self class] description]);
-    
-//    [((myTarBarViewController *)self.tabBarController) fixTabBarFrame];
-    
-    [self viewWillDisappearExt:animated];
+    objc_setAssociatedObject(self, &kHideTabBarAssociatedKey, [NSNumber numberWithBool:hidesBottomBarWhenPushed_DangDang], OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
 @end

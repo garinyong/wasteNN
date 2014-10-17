@@ -27,8 +27,6 @@
 
 -(void) setTabBarHiddenOnViewController:(BOOL) hide vc:(UIViewController *) vc
 {
-    vc.tabBarHidden_associated = hide;
-    
     if (hide==self.tabBar.hidden)
     {
         return;
@@ -67,6 +65,7 @@
                                        self.view.bounds.size.height - self.tabBar.frame.size.height);
 	}
     
+    vc.hidesBottomBarWhenPushed_DangDang = hide;
     self.tabBar.hidden = hide;
 }
 
