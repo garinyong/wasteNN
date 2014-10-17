@@ -25,9 +25,12 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void) setTabBarHidden:(BOOL) hide
+-(void) setTabBarHiddenOnViewController:(BOOL) hide vc:(UIViewController *) vc
 {
-    if (hide==self.tabBar.hidden) {
+    vc.tabBarHidden_associated = hide;
+    
+    if (hide==self.tabBar.hidden)
+    {
         return;
     }
     

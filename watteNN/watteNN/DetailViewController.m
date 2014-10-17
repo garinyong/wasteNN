@@ -50,14 +50,14 @@
     float offY = scrollView.contentOffset.y;   //本次contentOffset的位置
     if (offY > mark1) {      //offY > mark1 表示现在是下滚状态
         if (offY > 0) {        // 这个判断很关键，不信去掉试试
-            [((myTarBarViewController *)self.tabBarController) setTabBarHidden:YES];   //隐藏tabbar
+            [((myTarBarViewController *)self.tabBarController) setTabBarHiddenOnViewController:YES vc:self];   //隐藏tabbar
         }
         
     }
     else              //offY < mark1 表示现在是上滚状态
     {
         if (offY < scrollView.contentSize.height - scrollView.frame.size.height) {  // 这个判断很关键，不信去掉试试
-            [((myTarBarViewController *)self.tabBarController) setTabBarHidden:NO];   //不隐藏tabbar
+            [((myTarBarViewController *)self.tabBarController) setTabBarHiddenOnViewController:NO vc:self];   //不隐藏tabbar
         }
         
     }

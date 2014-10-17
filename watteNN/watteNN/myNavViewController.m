@@ -42,57 +42,32 @@
 
 - (void) pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-    if (viewController.tabBarHidden_associated)
-    {
-        [((myTarBarViewController *)self.tabBarController) setTabBarHidden:YES];
-    }
-    else
-    {
-        [((myTarBarViewController *)self.tabBarController) setTabBarHidden:NO];
-    }
+    [((myTarBarViewController *)self.tabBarController) setTabBarHiddenOnViewController:viewController.tabBarHidden_associated vc:viewController];
     
     [super pushViewController:viewController animated:animated];
 }
 
 - (UIViewController *) popViewControllerAnimated:(BOOL)animated
 {
-    UIViewController *vc = self.viewControllers[self.viewControllers.count - 2];
+    UIViewController *viewController = self.viewControllers[self.viewControllers.count - 2];
     
-    if (vc.tabBarHidden_associated)
-    {
-        [((myTarBarViewController *)self.tabBarController) setTabBarHidden:YES];
-    }
-    else
-    {
-        [((myTarBarViewController *)self.tabBarController) setTabBarHidden:NO];
-    }
+    [((myTarBarViewController *)self.tabBarController) setTabBarHiddenOnViewController:viewController.tabBarHidden_associated vc:viewController];
     
     return [super popViewControllerAnimated:animated];
 }
 
 - (NSArray *) popToViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-    if(viewController.tabBarHidden_associated)
-    {
-        [((myTarBarViewController *)self.tabBarController) setTabBarHidden:YES];
-    }
-    else
-    {
-        [((myTarBarViewController *)self.tabBarController) setTabBarHidden:NO];
-    }
+    [((myTarBarViewController *)self.tabBarController) setTabBarHiddenOnViewController:viewController.tabBarHidden_associated vc:viewController];
     
     return [super popToViewController:viewController animated:animated];
 }
 
 - (NSArray *) popToRootViewControllerAnimated:(BOOL)animated
 {
-    if ([self rootViewController].tabBarHidden_associated)
+    if ([self rootViewController])
     {
-        [((myTarBarViewController *)self.tabBarController) setTabBarHidden:YES];
-    }
-    else
-    {
-        [((myTarBarViewController *)self.tabBarController) setTabBarHidden:NO];
+        [((myTarBarViewController *)self.tabBarController) setTabBarHiddenOnViewController:[self rootViewController].tabBarHidden_associated vc:[self rootViewController]];
     }
     
     return [super popToRootViewControllerAnimated:animated];

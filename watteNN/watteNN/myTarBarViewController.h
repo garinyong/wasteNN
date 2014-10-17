@@ -13,6 +13,6 @@
 
 }
 
--(void) setTabBarHidden:(BOOL) hide;
+-(void) setTabBarHiddenOnViewController:(BOOL) hide vc:(UIViewController *) vc;
 
 @end

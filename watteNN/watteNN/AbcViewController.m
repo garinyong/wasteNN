@@ -81,12 +81,12 @@
 
 -(void) getClick2
 {
-    [[AppDelegate getTarBarViewController] setTabBarHidden:YES];
+    [[AppDelegate getTarBarViewController] setTabBarHiddenOnViewController:YES vc:self];
 }
 
 -(void) getClick3
 {
-    [[AppDelegate getTarBarViewController] setTabBarHidden:NO];
+    [[AppDelegate getTarBarViewController] setTabBarHiddenOnViewController:NO vc:self];
 }
 
 - (void)didReceiveMemoryWarning {
